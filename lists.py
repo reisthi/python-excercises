@@ -24,9 +24,9 @@ def reverse_words(sentence):
     return sentence.reverse()
 
 
-def ith_item_power(liste, index):
+def ith_item_power(bar, index):
     """Returns i-th element raised to the i-th power."""
-    result = liste[index]
+    result = bar[index]
     return result**index
 
 
