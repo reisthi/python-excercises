@@ -1,5 +1,10 @@
 """List exercises"""
 
+list_one = ['a', 'b', 'c', 1, 2, 3]
+list_deux = ["Un", "deux", "trois"]
+list_trois = ["Un", "deux", "trois"]
+list_quatre = ["UN", "deux", "trois"]
+
 
 def combine_lists(one, two):
     """Return a new list that combines the two given lists."""
@@ -14,15 +19,19 @@ def rotate_list(my_list):
     return item
 
 
-def reverse_words():
+def reverse_words(sentence):
     """Return the given sentence with the words in reverse order."""
+    return sentence.reverse()
 
 
-def ith_item_power():
+def ith_item_power(liste, index):
     """Returns i-th element raised to the i-th power."""
+    result = liste[index]
+    return result**index
 
 
-#
-# from lists import rotate_list
-# b = [4, 5, 6]
-# rotate_list(b)
+def comp_lists(one, two):
+    """ Compares two lists. Obs: It's case sensitive."""
+    same_items = set(one) & set(two)
+    return same_items
+
