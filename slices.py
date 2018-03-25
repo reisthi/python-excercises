@@ -14,8 +14,6 @@ def last_words(bar, index):
 def split_in_half(bar):
     """Return two halves of the given iterable."""
     middle = int(len(bar) / 2)
-    print(f'first half:   {bar[:middle]}'
-          f'\nsecond half:  {bar[middle:]}')
     return bar[:middle], bar[middle:]
 
 
