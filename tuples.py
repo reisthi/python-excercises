@@ -38,4 +38,4 @@ def name_key_simpler(name):
 
 def swap_ends(bar):
     """Swap the first and last items in the given list."""
-
+    bar[0], bar[-1] = bar[-1], bar[0]
