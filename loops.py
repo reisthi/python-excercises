@@ -1,13 +1,13 @@
 """Loop exercises"""
 
 
-def get_vowel_names(bars):
+def get_vowel_names(names):
     """Return a list containing all names given that start with a vowel."""
     vowels = 'aeiou'
     vowel_names = []
-    for name in bars:
+    for name in names:
         if name[0].lower() in vowels:
-            vowel_names.append(bars)
+            vowel_names.append(names)
     return vowel_names
 
 
@@ -31,4 +31,12 @@ def words_containing(bar, letter):
             bucket.append(a)
     return bucket
 
+
+def to_upper_case(names):
+    """ Returns a list with upper case letters. """
+    new = []
+    for item in names:
+        # if not item[0].upper() in 'T':
+        new.append(item.upper())
+    return new
 
