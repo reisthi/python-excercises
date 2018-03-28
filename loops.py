@@ -40,3 +40,13 @@ def to_upper_case(names):
         new.append(item.upper())
     return new
 
+
+def has_consonants(names):
+    """ Checks if names in a list have consonants"""
+    result = []
+    for name in names:
+        if name.lower() in 'aeiou':
+            result.append(name)
+    return print("No consonants found in: ", result)
+
+
