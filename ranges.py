@@ -34,6 +34,3 @@ def triples():
     """Return list of Pythagorean triples less than input num."""
 
 
-def prints(list):
-    for n in range(list):
-        print(n)
