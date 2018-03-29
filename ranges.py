@@ -26,11 +26,15 @@ def identity():
     """Return an identity matrix of size x size."""
 
 
-def is_range():
+def is_range(numbers):
     """Return True if given list could be represented by range with step 1."""
+    end = len(numbers)
+    for number in numbers:
+        if range(number, end, 1):
+            return True
+        else:
+            return False
 
 
 def triples():
     """Return list of Pythagorean triples less than input num."""
-
-
